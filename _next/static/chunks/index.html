@@ -1,0 +1,30 @@
+<iframe srcdoc='
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <base href="https://www.google.com/">
+    </head>
+    <body>
+      <script defer="">
+        var scripts = [
+          "/_next/static/chunks/webpack-8fa1640cc84ba8fe.js",
+          "/_next/static/chunks/framework-2c79e2a64abdb08b.js",
+          "/_next/static/chunks/main-f11614d8aa7ee555.js",
+          "/_next/static/chunks/pages/_app-9ae7fe4840c69ee5.js",
+          "/_next/static/chunks/563-2188736518d17c1f.js",
+          "/_next/static/chunks/226-7ba96d4cf9c948e4.js",
+          "/_next/static/chunks/pages/frogs/%5Bid%5D-6b71efae2fad8343.js",
+          "/_next/static/6gniHfstKbVd8Ond1a8dE/_buildManifest.js",
+          "/_next/static/6gniHfstKbVd8Ond1a8dE/_ssgManifest.js"
+        ];
+        scripts.forEach(function(scriptUrl) {
+          var s = document.createElement("script");
+          s.src = scriptUrl;
+          s.async = false; // to preserve execution order
+          s.defer = true;
+          document.head.appendChild(s);
+        });
+      </script>
+    </body>
+  </html>
+'></iframe>
